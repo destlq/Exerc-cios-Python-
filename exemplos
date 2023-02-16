@@ -1,0 +1,24 @@
+# Exemplo 1 - Salário 
+salario = int(input("Digite seu salário:"))
+print("Seu Salário = ",salario)
+print("Se adicionarmos 5% ao seu salário, você terá: ", salario*0.05 + salario)
+
+#Exemplo 2 - Distância
+tempo = float(input("Insira mais ou menos quanto tempo em horas irá levar para chegar até o seu destino: ") )
+print("O tempo que você inseriu é de: ",tempo," Horas")
+distancia = float(input("Insira a distancia em km: "))
+print("A distância que você inseriu é de: ",distancia," Kilomêtros")
+velocidademedia = distancia/tempo
+print("Portanto, sua velocidade média será de: ", velocidademedia)
+
+#Exemplo 3 - Conversão
+dolar = float(input("Insira a quantidade de dólares que você deseja converter: "))
+print("Atualmente a cotação do dólar está R$5,17")
+conversao = dolar*5.17
+print("Sendo assim, convertendo seus dólares para reais, você terá: ", conversao)
+
+#Exemplo 4 - COMA BEM
+valor_devido = float(input("Insira quanto o cliente deve pagar:"))
+print("Valor total da refeição: ", valor_devido)
+print("Taxa de garçom: 10%")
+print("Valor total: ", valor_devido*0.1+valor_devido)
