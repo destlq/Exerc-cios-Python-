@@ -1,0 +1,34 @@
+#Exemplo 1
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+print("Antes da troca: n1 = ", n1, "e n2 = ", n2)
+temp = n1
+n1 = n2
+n2 = temp 
+print("Depois da troca: n1= ", n1, "e n2 =", n2)  
+
+#Exemplo 2 
+kmpercorrido = float(input("Digite quantos kilômetros você percorreu: "))
+dias = float(input("Digite a quantidade de dias que alugou o carro: "))
+valor = (dias * 60) + (0.15 * kmpercorrido)
+print("O valor a ser pago é de: R$", valor)
+
+#Exemplo 3 
+ASSINATURA = 17.90
+MINUTOS_LOCAL = 0.04
+MINUTOS_CELULAR = 0.20
+INTERURBANOS = 34.29
+
+qtdMinutosL = int(input("Minutos em chamada local: "))
+qtdMinutosC = int(input("Minutos em chamada para celular: "))
+
+totalLocal = qtdMinutosL * MINUTOS_LOCAL
+totalCelular = qtdMinutosC * MINUTOS_CELULAR
+
+total = totalLocal + totalCelular + INTERURBANOS + ASSINATURA
+
+print(f"Assinatura --> R$ {ASSINATURA:.2f}")
+print(f"Chamadas local --> R$ {totalLocal:.2f}")
+print(f"Chamadas celular --> R$ {totalCelular:.2f}")
+print(f"Interurbanos --> R$ {INTERURBANOS:.2f}")
+print("O valor a ser pago é de R$", total) 
